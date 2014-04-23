@@ -1,79 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Town without Roads <">
+	<meta name="author" content="Town without Roads <">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Noroadtown : " />
+	<title>Town without Roads</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Noroadtown</title>
-  </head>
 
-  <body>
+</head>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/maning/noroadtown">View on GitHub</a>
+<body>
+	<div class="container">
+		<div class="col-lg-3">
+			<div class="cg-sidebar" style="position:fixed">
+				<ul class="nav cg-sidenav">
+					
+					<li><a href="#intro">Introduction</a></li>              
+					<li><a href="#howtomap">How to Map</a></li>	
+					<li><a href="#challenge">Mapping Challenge</a></li>		
+					<li><a href="#howtouse">How to use the data</a></li>	
+                                        <li><a href="#resources">Other Resources</a></li>	
 
-          <h1 id="project_title">Noroadtown</h1>
-          <h2 id="project_tagline"></h2>
+					<br />
+					<li style="margin: 25px 0 0 15px;">
+						<div id="google_translate_element"></div>
+						<script type="text/javascript">
+							function googleTranslateElementInit() {
+								new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT}, 'google_translate_element');
+							}
+						</script>
+						<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/maning/noroadtown/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/maning/noroadtown/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+					</li>
+					<li style="margin:5px;"><br /><em>In collaboration with:</em></li>
+					<li style="margin:5px;"><a href="http://openstreetmap.org.ph/" target="_blank"><img src="img/osmph_logo.png" style="width: 100px; height: auto;"></a>
+					
+					<br />
+ 				</ul>
+			</div>
+		</div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+		<div class="col-lg-9" style="background-color:#f5f5f5;">		
+			<div class="cg-intro container" id="intro">
+				<h1>Towns with no Roads?</h1>
+				<p class="lead">Let's improve the location of <code>place=town</code> nodes in OpenStreetMap</p> 
+			</div>    
+		<div class="chapter">
+				<img width="100%" src="img/old_manila.jpg" alt="Stamen Watercolor" />
+				<span class="caption">Plano de Manila y sus Arrables, Francisco J. de Gamoneda ; imp. lit. de Ramon Montes, original scale 1:10,000, 1898. <a href="<https://www.lib.utexas.edu/maps/philippines.html" target="_blank">Perry-Castañeda Library Map Collection</a>.</span>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+				<p>Location of settlements such as cities, towns and villages are very important features that should be in any map like <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> (OSM). Most towns and cities tagged as  <code><a href="http://wiki.openstreetmap.org/wiki/Tag:place%3Dtown" target="_blank">place=town or city</a></code> in the Philippines are already added in the OSM.  Unfortunately, some of them are not located in the town's center or plaza.  You can help improve the location of Philippine towns in OSM.
+                                
+		</div>
+		<div class="chapter">
+			<div class="page-header">
+				<h1 id="howtomap">How to Map</h1>
+			</div>
+           		<h3>Editing data in OpenStreetMap</h3>
+			<p>Mapping in OpenStreetMap is as easy as these 3 steps.</p>
+				<ol>
+				  <li>Set up an account and get a log in from 
+				    <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>.</li>
+				  <li>Learn to map. Watch this video and follow the instructions.</li>
+				<br />
+				<iframe width="100%" height="400" src="//www.youtube.com/embed/Ir-3K0pjwOI" frameborder="0" allowfullscreen></iframe>
+				<br />				
+				<span class="caption">Introduction to editing in OpenStreetMap by <a href="http://mapgive.state.gov" target="_blank">http://mapgive.state.gov</a>. </span>
+				<br />
+				<li>Start mapping! </li>
+				</ol>
+			</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<div class="chapter">
+	<div class="page-header">
+		<h1 id="challenge">Mapping Challenge</h1>
+	</div>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+	<h3>Drag the Town node near the town center</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+      <object data="map.html" width="100%" height="400px">
+	<embed src="map.html" width="100%" height="400px"> </embed>
+	Error: data could not be displayed at the moment, server maybe busy.
+      </object>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+	<p>The map above shows a 2 km square where a town node is located.  Within this square, we computed the length of roads.  The squares shown are towns where there are no roads.  That doesn't look right.  Town nodes are normally placed within the town's center where "a range of shops and facilities used by people from nearby villages". If you think the town node is misplaced, help us improve the location in OSM.</p> 
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+	 <ol>
+	   <li>Browse the map above to check towns with no roads.  Zoom-in close enough</li>
+	   <li>Click the <code>"i"</code> button on the lower right corner of the map and click <code>Improve this map</code> link.</li>
+           <li>This will open your preferred OSM editor (either iD, JOSM or potlatch).  Simply drag the <code>place=town</code> node to it's correct location.</li>
+           <li>Also add as much detail within the town center such as amenities, buildings, roads and other structures.</li>
+	   <li>When saving your edits, include this comment to your changeset <code>#improve_noroadtown</code>.</li>
+	   <br />
+  	   <iframe width="100%" height="400" src="//www.youtube.com/embed/9Q_dLQF8T-I" frameborder="0" allowfullscreen></iframe>
+	   <br />
+	 </ol>
+	</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<h3>Contributions </h3>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+      <h4>Last 7 days of edits</h4>
+      <object data="http://resultmaps.neis-one.org/osm-changesets?comment=improve_noroadtown#6/12.683/122.267" width="100%" height="700px">
+	<embed src="http://resultmaps.neis-one.org/osm-changesets?comment=improve_noroadtown#6/12.683/122.267" width="100%" height="700px"> </embed>
+	Error: data could not be displayed at the moment, server maybe busy.
+      </object>
+      <span class="caption">Latest edits with the changeset tag <code>"#improve_noroadtown"</code> from <a href="http://resultmaps.neis-one.org/osm-changesets?comment=improve_noroadtown#6/12.683/122.267" target="_blank">http://resultmaps.neis-one.org/osm-changesets</a>.</span>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+</p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Noroadtown maintained by <a href="https://github.com/maning">maning</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
 
-    
+<div class="chapter">
+	<div class="page-header">
+		<h1 id="resources">Other Resources</h1>
+	</div>
+	<ul>
+	        <li><a href="http://wiki.openstreetmap.org" target="_blank">OpenStreetMap</a> is a project to create and distribute free geographic data for the world. It is being built by volunteer contributors. </li>
+		<li>Learn to contribute to OpenStreetMap at <a href="http://learnosm.org" target="_blank">http://learnosm.org</a> and <a href="http://mapgive.state.gov" target="_blank">http://mapgive.state.gov</a>
+		<li>Talk to the OpenStreetMap Philippines community (OSM-PH) by visiting <a href="http://wiki.openstreetmap.org/wiki/Philippines" target="_blank">http://wiki.openstreetmap.org/wiki/Philippines</a>, 
+		  <a href="http://lists.openstreetmap.org/listinfo/talk-ph" target="_blank">joining the mailing-list</a> and <a href="https://www.facebook.com/OSMPH" target="_blank">visiting https://www.facebook.com/OSMPH</a>.</li>
+		<li>For comments and correction on this page, go to: <a href="https://github.com/maning/noroadtown" target="_blank">https://github.com/maning/noroadtown</a>.</li>              
 
-  </body>
+	</ul>
+</div>
+</div> <!-- close col-lg-9 -->
+</div> <!-- close body container -->
+
+<!-- jQuery -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<!-- all compiled plugins -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>  
 </html>
