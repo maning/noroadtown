@@ -1,4 +1,4 @@
-var noroads = [{
+{
 "type": "FeatureCollection",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
                                                                                 
@@ -238,4 +238,3 @@ var noroads = [{
 { "type": "Feature", "properties": { "ID": 596306, "osm_id": "198523399", "name": "Sitangkai", "type": "town" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 119.455537490098862, 4.79266123595196 ], [ 119.473539074171626, 4.792754459230367 ], [ 119.473631590595602, 4.774695582305374 ], [ 119.455630476387043, 4.774602711857392 ], [ 119.455537490098862, 4.79266123595196 ] ] ] } }
 ]
 }
-];
